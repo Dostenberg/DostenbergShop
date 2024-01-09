@@ -1,0 +1,166 @@
+* {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-family: sen;
+	font-size: 18px;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+.navbar {
+	width: 100%;
+	height: 80px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container li{
+	display: inline-block;
+}
+
+.container li a {
+	display: inline-block;
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.navbar-wrap li {
+	padding-inline: .5em;
+}
+
+.navbar-wrap li a {
+	font-size: 22px;
+}
+
+.navbar-logo {
+	font-weight: 800;
+	font-size: 34px;
+	margin-left: 5em;
+	transition: .2s;
+}
+
+.navbar-logo:hover{
+	transform: scale(1.05);
+}
+
+.navbar-menu {
+	margin-right: 2em;
+}
+
+.navbar-menu li a {
+	padding: 16px 10px 10px 10px;
+	position: relative;
+	line-height: .8;
+	color: rgba(0, 0, 0, .8);
+}
+
+.geo li a {
+	color: rgba(255, 255, 255, .9);
+}
+
+.navbar-menu li a:hover {
+	text-replace: .2s;
+	color: black;
+}
+
+.navbar-menu li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.navbar-menu li a:hover::after {
+  width: 70%;
+}
+.navbar-auth {
+	margin-right: 8em;
+}
+
+.navbar-auth li a {
+	padding: 10px 20px;
+	border: 1px solid #0060fe;
+	border-radius: 20px;
+	transition: .35s;
+	letter-spacing: .5px;
+	background-color: #0060fe;
+	color: white;
+}
+
+.navbar-auth .navbar-reg:hover {
+	border: 1px solid black;
+	color: black;
+	background-color: white;
+}
+
+.navbar-auth .navbar-buy {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.navbar-auth .navbar-buy:hover {
+	border: 1px solid #0060fe;
+	color: white;
+	background-color: #0060fe;
+}
+
+.discrp {
+	margin: 9em;
+	margin-bottom: 4em;
+}
+
+.discrp li {
+	font-size: 32px;
+	line-height: 2em;
+}
+
+.buy-btn a {
+	border: 1px solid #0060fe;
+	border-radius: 20px;
+	padding: 20px 35px 20px 35px;
+	font-size: 24px;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	background-color: #0060fe;
+	color: white;
+	transition: .3s;
+	margin-left: 7.5em;
+}
+
+.buy-btn a:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.speed-vpn{
+	height: 600px;
+	display: flex;
+	float: right;
+	margin-right: 10em;
+	margin-top: -23em;
+}
